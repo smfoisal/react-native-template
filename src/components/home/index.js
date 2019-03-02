@@ -1,11 +1,14 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
+import { Screen, Demo } from '../_common';
 
 const HomePage = props => {
   return (
-    <View>
-      <Text>Home Page</Text>
-    </View>
+    <Screen>
+      <Demo>
+        <Text>Home Page</Text>
+      </Demo>
+    </Screen>
   );
 };
 

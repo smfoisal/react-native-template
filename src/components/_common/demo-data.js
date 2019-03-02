@@ -1,19 +1,20 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 
-const Screen = props => {
+const Demo = props => {
     return (
-        <View style={[styles.screenContainer, props.style]}>
+        <View style={[styles.demoContainer, props.style]}>
             {props.children}
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    screenContainer: {
+    demoContainer: {
         flex: 1,
-        backgroundColor: '#fafafa',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 });
 
-export { Screen };
+export { Demo };

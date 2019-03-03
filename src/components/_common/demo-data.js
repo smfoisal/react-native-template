@@ -1,20 +1,20 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, View, Text } from 'react-native'
 
 const Demo = props => {
-    return (
-        <View style={[styles.demoContainer, props.style]}>
-            {props.children}
-        </View>
-    );
+  return (
+    <View style={[styles.demoContainer, props.style]}>
+      <Text>{props.children}</Text>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
-    demoContainer: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+  demoContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
 
 export { Demo };

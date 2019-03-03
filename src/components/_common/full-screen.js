@@ -1,12 +1,14 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
+import { View, StyleSheet, ScrollView } from 'react-native'
 
 const Screen = props => {
-    return (
-        <View style={[styles.screenContainer, props.style]}>
-            {props.children}
-        </View>
-    );
+  return (
+    <View style={[styles.screenContainer, props.style]}>
+      <ScrollView>
+        {props.children}
+      </ScrollView>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({

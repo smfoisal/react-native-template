@@ -6,6 +6,10 @@ import {
   TouchableNativeFeedback,
 } from 'react-native';
 
+/**
+ * Touchable buttons with native effect for android
+ * and `TouchableOpacity` for iOS
+ */
 const Touchable = props => {
   switch (Platform.OS) {
     case 'android':

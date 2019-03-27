@@ -1,6 +1,9 @@
 import React from 'react'
 import { View, StyleSheet, ScrollView } from 'react-native'
 
+/**
+ * Every screen's parent view
+ */
 const Screen = props => {
   return (
     <View style={[styles.screenContainer, props.style]}>

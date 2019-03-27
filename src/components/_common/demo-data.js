@@ -1,6 +1,11 @@
 import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 
+/**
+ * to view demo pages
+ * texts in this pages are centered vertically and horizontally centered
+ */
+
 const Demo = props => {
   return (
     <View style={[styles.demoContainer, props.style]}>
